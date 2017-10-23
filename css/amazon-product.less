@@ -1,0 +1,167 @@
+@color1: #f55411;
+@color2: #ffb036;
+@color3: #f7941c;
+
+@breakpoint1-max: 1024px;
+@breakpoint1-min: 641px;
+@breakpoint2-max: 640px;
+@breakpoint2-min: 1px;
+
+.max2lines {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 1.4em;
+  max-height: 2.8em;
+}
+
+body {
+  background: gray;
+}
+
+.ca63332-related-product {
+  font-family: Roboto, sans-serif;
+  height: 184px;
+  overflow: hidden;
+  width: 786px;
+  .image,
+  .text {
+    height: 184px;
+    float: left;
+  }
+  .image {
+    background-image: url(img/product-image-bg.png);
+    text-align: center;
+    position: relative;
+    width: 330px;
+    img{
+      max-height: 184px;
+      right: 1.5em;
+      position: relative;
+    }
+    .price {
+      background: @color1;
+      border-radius: 9999em;
+      top: 16px;
+      color: white;
+      display: inline;
+      font-size: 26px;
+      font-weight: bold;
+      height: 75px;
+      left:180px;
+      line-height: 75px;
+      min-width: 55px;
+      padding: 0 10px;
+      position: absolute;
+    }
+  }
+  .text {
+    width: 456px;
+    padding: 0 10px 0 0;
+    width: calc(456px - 10px );
+    background: white;
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 30px;
+      margin-left: 5px;
+      .max2lines;
+    }
+    .amazon {
+      color: @color2;
+      font-size: 12px;
+      font-weight: bold;
+      margin-top: 12px;
+      margin-left: 5px;
+      img {
+        vertical-align: middle;
+      }
+    }
+    .buy {
+      background: @color3;
+      border-radius: 9999em;
+      color: white;
+      display: inline;
+      font-size: 13px;
+      font-weight: bold;
+      height: 70px;
+      line-height: 70px;
+      padding: 12px 24px;
+      min-width: 50px;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width : @breakpoint1-max) and (min-width : @breakpoint1-min) {
+  body{
+    background: silver;
+  }
+  .ca63332-related-product {
+    height: 216px;
+    width: 598px;
+    .image,
+    .text {
+      height: 216px;
+    }
+    .image {
+      width: 250px;
+      img{
+        max-height: 216px;
+        right: .5em;
+      }
+      .price {
+        height: 85px;
+        left: 150px;
+        line-height: 85px;
+        min-width: 65px;
+      }
+    }
+    .text {
+      padding: 0 10 0 30px;
+      width: calc(348px - 10px - 30px );
+      .buy {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : @breakpoint2-max) and (min-width : @breakpoint2-min) {
+  body{
+    background: lightgray;
+  }
+  .ca63332-related-product {
+    height: 318px;
+    width: 324px;
+    .image{
+      height: 156px;
+      width: 324px;
+      img{
+        max-height: 156px;
+        max-width: 100%;
+        right: 0;
+      }
+      .price {
+        left: 60px;
+        top: 45px;
+      }
+    }
+    .text {
+      text-align: center;
+      padding: 0 10px;
+      margin: 0;
+      height: 160px;
+      width: calc(324 - 20px);
+      .title{
+        margin-top: 0;
+      }
+    }
+  }
+}

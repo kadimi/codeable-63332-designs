@@ -1,0 +1,47 @@
+body {
+  background: red;
+}
+.ca63332-related-product {
+  font-family: Roboto, sans-serif;
+  height: 184px;
+  width: 786px;
+  max-height: 184px;
+  max-width: 786px;
+}
+.ca63332-related-product .image {
+  float: left;
+  background-image: url(img/product-image-bg.png);
+  text-align: center;
+  position: relative;
+  height: 184px;
+  width: 330px;
+  max-height: 184px;
+  max-width: 330px;
+}
+.ca63332-related-product img {
+  position: relative;
+  max-height: 184px;
+  right: 1.5em;
+}
+.ca63332-related-product .price {
+  position: absolute;
+  bottom: 160px;
+  left: 160px;
+  height: 70px;
+  width: 70px;
+  line-height: 70px;
+  font-size: 26px;
+  color: white;
+  display: block;
+  border-radius: 9999em;
+  background: red;
+  position: relative;
+}
+.ca63332-related-product .text {
+  float: left;
+  height: 184px;
+  width: 456px;
+  max-height: 184px;
+  max-width: 456px;
+  background: white;
+}
