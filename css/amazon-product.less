@@ -13,8 +13,8 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-  line-height: 1.4em;
-  max-height: 2.8em;
+  line-height: 1.15em;
+  max-height: 2.3em;
 }
 
 body {
@@ -38,8 +38,8 @@ body {
     width: 330px;
     img{
       max-height: 184px;
-      right: 1.5em;
       position: relative;
+      right: 1.5em;
     }
     .price {
       background: @color1;
@@ -58,14 +58,13 @@ body {
     }
   }
   .text {
-    width: 456px;
+    background: white;
     padding: 0 10px 0 0;
     width: calc(456px - 10px );
-    background: white;
     .title {
       font-size: 24px;
       font-weight: bold;
-      margin-top: 30px;
+      margin-top: 25px;
       margin-left: 5px;
       .max2lines;
     }
@@ -88,8 +87,8 @@ body {
       font-weight: bold;
       height: 70px;
       line-height: 70px;
-      padding: 12px 24px;
       min-width: 50px;
+      padding: 12px 24px;
       a {
         color: white;
         text-decoration: none;
@@ -97,7 +96,6 @@ body {
     }
   }
 }
-
 
 @media only screen and (max-width : @breakpoint1-max) and (min-width : @breakpoint1-min) {
   body{
@@ -125,9 +123,12 @@ body {
     }
     .text {
       padding: 0 10 0 30px;
-      width: calc(348px - 10px - 30px );
+      width: calc( 348px - 10px - 30px );
       .buy {
         font-size: 14px;
+      }
+      .title{
+        margin-top: 42px;
       }
     }
   }
@@ -154,13 +155,12 @@ body {
       }
     }
     .text {
-      text-align: center;
-      padding: 0 10px;
-      margin: 0;
       height: 160px;
-      width: calc(324 - 20px);
+      padding: 0 10px;
+      text-align: center;
+      width: 304px;
       .title{
-        margin-top: 0;
+        margin-top: 10px;
       }
     }
   }

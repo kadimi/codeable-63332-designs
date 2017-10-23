@@ -12,7 +12,7 @@ gulp.task('serve',['less'], () => {
 	});
 	gulp.watch('css/*.less', ['less']);
 	// gulp.watch('./**/*.css').on('change', browserSync.reload);
-	gulp.watch('index.html').on('change', browserSync.reload);
+	gulp.watch('*.html').on('change', browserSync.reload);
 });
 
 // Compile less into CSS & auto-inject into browsers

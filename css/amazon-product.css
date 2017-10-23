@@ -4,8 +4,8 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-  line-height: 1.4em;
-  max-height: 2.8em;
+  line-height: 1.15em;
+  max-height: 2.3em;
 }
 body {
   background: gray;
@@ -29,8 +29,8 @@ body {
 }
 .ca63332-related-product .image img {
   max-height: 184px;
-  right: 1.5em;
   position: relative;
+  right: 1.5em;
 }
 .ca63332-related-product .image .price {
   background: #f55411;
@@ -48,23 +48,22 @@ body {
   position: absolute;
 }
 .ca63332-related-product .text {
-  width: 456px;
+  background: white;
   padding: 0 10px 0 0;
   width: calc(446px);
-  background: white;
 }
 .ca63332-related-product .text .title {
   font-size: 24px;
   font-weight: bold;
-  margin-top: 30px;
+  margin-top: 25px;
   margin-left: 5px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-  line-height: 1.4em;
-  max-height: 2.8em;
+  line-height: 1.15em;
+  max-height: 2.3em;
 }
 .ca63332-related-product .text .amazon {
   color: #ffb036;
@@ -85,8 +84,8 @@ body {
   font-weight: bold;
   height: 70px;
   line-height: 70px;
-  padding: 12px 24px;
   min-width: 50px;
+  padding: 12px 24px;
 }
 .ca63332-related-product .text .buy a {
   color: white;
@@ -124,6 +123,9 @@ body {
   .ca63332-related-product .text .buy {
     font-size: 14px;
   }
+  .ca63332-related-product .text .title {
+    margin-top: 42px;
+  }
 }
 @media only screen and (max-width: 640px) and (min-width: 1px) {
   body {
@@ -147,13 +149,12 @@ body {
     top: 45px;
   }
   .ca63332-related-product .text {
-    text-align: center;
-    padding: 0 10px;
-    margin: 0;
     height: 160px;
-    width: calc(304px);
+    padding: 0 10px;
+    text-align: center;
+    width: 304px;
   }
   .ca63332-related-product .text .title {
-    margin-top: 0;
+    margin-top: 10px;
   }
 }
