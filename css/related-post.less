@@ -1,0 +1,168 @@
+@color1: #f55411;
+@color2: #ffb036;
+@color3: #4e4e4e;
+
+@breakpoint1-max: 1024px;
+@breakpoint1-min: 641px;
+@breakpoint2-max: 640px;
+@breakpoint2-min: 1px;
+
+@overlay-opacity: .5;
+@overlay-color-1: #6d84f3;
+@overlay-color-2: #eb677f;
+
+.gradient(@type; @colors; @dir: 90deg; @prefixes: webkit, moz, ms, o; @index: length(@prefixes)) when (@index > 0) {
+  .gradient(@type; @colors; @dir; @prefixes; (@index - 1));
+  @prefix  : extract(@prefixes, @index);
+  @dir-old : 90 - (@dir); // https://www.quirksmode.org/css/images/angles.html
+  background-image: ~"-@{prefix}-@{type}-gradient(@{dir-old}, @{colors})";
+  & when ( @index = length(@prefixes) ) {
+    background-image: ~"@{type}-gradient(@{dir}, @{colors})";
+  }
+}
+
+.max-lines(@lines: 3; @line-height: 1.2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: @lines;
+  line-height: @line-height;
+  max-height: @line-height * @lines;
+}
+
+body {
+  background: gray;
+}
+
+.ca63332-related-post {
+  font-family: Verdana, sans-serif;
+  height: 216px;
+  overflow: hidden;
+  width: 766px;
+  .text {
+    float: left;
+    height: 216px;
+    width: 200px;
+  }
+  .image {
+    float: left;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    img {
+      object-fit: cover;
+      min-height: 100%;
+      min-width: 100%;
+    }
+  }
+  .overlay {
+    display: block;
+    position: absolute;
+    opacity: @overlay-opacity;
+    transition: opacity .4s ease-in-out;
+    .gradient(linear; @overlay-color-1 25%, @overlay-color-2 75%; 0);
+    &:hover {
+      opacity: .1;
+    }
+  }
+  .image,
+  .image img,
+  .overlay {
+    height: 216px;
+    width: 200;
+  }
+  .text {
+    background: white;
+    padding: 0 10px 0 30px;
+    width: calc(566px - 10px - 40px );
+    .title {
+      font-family: Roboto, sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-left: 5px;
+      .max-lines(2, 1.3em);
+    }
+    .excerpt {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 5px;
+      .max-lines(2, 1.4em);
+    }
+    .read {
+      background: @color3;
+      border-radius: 9999em;
+      color: white;
+      display: inline;
+      font-size: 13px;
+      font-weight: bold;
+      height: 70px;
+      line-height: 70px;
+      min-width: 50px;
+      padding: 12px 24px;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : @breakpoint1-max) and (min-width : @breakpoint1-min) {
+  body{
+    background: silver;
+  }
+  .ca63332-related-post {
+    height: 216px;
+    width: 598px;
+    .text {
+      height: 216px;
+    }
+    .image,
+    .image img,
+    .overlay {
+      height: 216px;
+      width: 180px;
+    }
+    .text {
+      padding: 0 20px 0 20px;
+      width: calc( 598px - 180px - 20px - 20px );
+      .read {
+        font-size: 14px;
+      }
+      .title{
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : @breakpoint2-max) and (min-width : @breakpoint2-min) {
+  body{
+    background: lightgray;
+  }
+  .ca63332-related-post {
+    height: 519px;
+    width: 324px;
+    .image,
+    .image img,
+    .overlay{
+      height: 250px;
+      width: 324px;
+    }
+    .text {
+      height: 361px;
+      padding: 0 10px 0 10px;
+      text-align: center;
+      width: calc(324px - 10px - 10px);
+      .title{
+        margin-top: 20px;
+        .max-lines( 3, 1.4em );
+      }
+      .excerpt{
+        .max-lines( 3, 1.4em );
+      }
+    }
+  }
+}
