@@ -49,6 +49,7 @@ body {
   width: calc(516px);
 }
 .ca63332-related-post .text .title {
+  color: #222;
   font-family: Roboto, sans-serif;
   font-size: 24px;
   font-weight: bold;
@@ -63,6 +64,7 @@ body {
   max-height: 2.6em;
 }
 .ca63332-related-post .text .excerpt {
+  color: #444;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 5px;
