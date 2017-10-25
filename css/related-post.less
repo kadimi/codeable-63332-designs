@@ -77,36 +77,40 @@ body {
     padding: 0 10px 0 30px;
     width: calc(566px - 10px - 40px );
     .title {
-      color: @color1;
       font-family: Roboto, sans-serif;
       font-size: 24px;
       font-weight: bold;
       margin-top: 20px;
       margin-left: 5px;
       .max-lines(2, 1.3em);
+      a {
+        color: @color1;
+        text-decoration: none;
+        &:hover{
+
+        color: @color2;
+        }
+      }
     }
     .excerpt {
       color: @color2;
+      font-size: 15px;
       margin-top: 10px;
       margin-bottom: 10px;
       margin-left: 5px;
       .max-lines(2, 1.4em);
     }
-    .read {
+    .read a {
       background: @color3;
       border-radius: 9999em;
       color: white;
-      display: inline;
-      font-size: 13px;
+      display: inline-block;
+      font-size: 12.5px;
       font-weight: bold;
-      height: 70px;
-      line-height: 70px;
-      min-width: 50px;
-      padding: 12px 24px;
-      a {
-        color: white;
-        text-decoration: none;
-      }
+      line-height: 0;
+      margin: 10px 0 0 0;
+      padding: 20px 25px;
+      text-decoration: none;
     }
   }
 }
