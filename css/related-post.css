@@ -2,6 +2,7 @@
   font-family: Verdana, sans-serif;
   outline: solid 1px lightgray;
   height: 216px;
+  margin-bottom: 1em;
   overflow: hidden;
   width: 766px;
 }

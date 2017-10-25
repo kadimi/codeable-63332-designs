@@ -10,6 +10,7 @@
 .ca63332-amazon-product {
   font-family: Roboto, sans-serif;
   height: 184px;
+  margin-bottom: 1em;
   overflow: hidden;
   outline: solid 1px lightgray;
   width: 786px;
