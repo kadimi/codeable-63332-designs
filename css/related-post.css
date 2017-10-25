@@ -1,8 +1,6 @@
-body {
-  background: gray;
-}
 .ca63332-related-post {
   font-family: Verdana, sans-serif;
+  outline: solid 1px lightgray;
   height: 216px;
   overflow: hidden;
   width: 766px;
@@ -66,9 +64,6 @@ body {
   color: #222;
   text-decoration: none;
 }
-.ca63332-related-post .text .title a:hover {
-  color: #444;
-}
 .ca63332-related-post .text .excerpt {
   color: #444;
   font-size: 15px;
@@ -96,9 +91,6 @@ body {
   text-decoration: none;
 }
 @media only screen and (max-width: 1024px) and (min-width: 641px) {
-  body {
-    background: silver;
-  }
   .ca63332-related-post {
     height: 216px;
     width: 598px;
@@ -124,9 +116,6 @@ body {
   }
 }
 @media only screen and (max-width: 640px) and (min-width: 1px) {
-  body {
-    background: lightgray;
-  }
   .ca63332-related-post {
     height: 519px;
     width: 324px;
@@ -138,7 +127,7 @@ body {
     width: 324px;
   }
   .ca63332-related-post .text {
-    height: 361px;
+    height: 269px;
     padding: 0 10px 0 10px;
     text-align: center;
     width: calc(304px);

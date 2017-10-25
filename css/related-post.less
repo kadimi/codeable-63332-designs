@@ -31,12 +31,9 @@
   max-height: @line-height * @lines;
 }
 
-body {
-  background: gray;
-}
-
 .ca63332-related-post {
   font-family: Verdana, sans-serif;
+  outline: solid 1px lightgray;
   height: 216px;
   overflow: hidden;
   width: 766px;
@@ -86,10 +83,6 @@ body {
       a {
         color: @color1;
         text-decoration: none;
-        &:hover{
-
-        color: @color2;
-        }
       }
     }
     .excerpt {
@@ -116,9 +109,6 @@ body {
 }
 
 @media only screen and (max-width : @breakpoint1-max) and (min-width : @breakpoint1-min) {
-  body{
-    background: silver;
-  }
   .ca63332-related-post {
     height: 216px;
     width: 598px;
@@ -145,9 +135,6 @@ body {
 }
 
 @media only screen and (max-width : @breakpoint2-max) and (min-width : @breakpoint2-min) {
-  body{
-    background: lightgray;
-  }
   .ca63332-related-post {
     height: 519px;
     width: 324px;
@@ -158,7 +145,7 @@ body {
       width: 324px;
     }
     .text {
-      height: 361px;
+      height: 269px;
       padding: 0 10px 0 10px;
       text-align: center;
       width: calc(324px - 10px - 10px);

@@ -7,32 +7,30 @@
   line-height: 1.15em;
   max-height: 2.3em;
 }
-body {
-  background: gray;
-}
-.ca63332-related-product {
+.ca63332-amazon-product {
   font-family: Roboto, sans-serif;
   height: 184px;
   overflow: hidden;
+  outline: solid 1px lightgray;
   width: 786px;
 }
-.ca63332-related-product .image,
-.ca63332-related-product .text {
+.ca63332-amazon-product .image,
+.ca63332-amazon-product .text {
   height: 184px;
   float: left;
 }
-.ca63332-related-product .image {
+.ca63332-amazon-product .image {
   background-image: url(img/product-image-bg.png);
   text-align: center;
   position: relative;
   width: 330px;
 }
-.ca63332-related-product .image img {
+.ca63332-amazon-product .image img {
   max-height: 184px;
   position: relative;
   right: 1.5em;
 }
-.ca63332-related-product .image .price {
+.ca63332-amazon-product .image .price {
   background: #f55411;
   border-radius: 9999em;
   top: 16px;
@@ -47,12 +45,12 @@ body {
   padding: 0 10px;
   position: absolute;
 }
-.ca63332-related-product .text {
+.ca63332-amazon-product .text {
   background: white;
   padding: 0 10px 0 0;
   width: calc(446px);
 }
-.ca63332-related-product .text .title {
+.ca63332-amazon-product .text .title {
   font-size: 24px;
   font-weight: bold;
   margin-top: 25px;
@@ -65,17 +63,17 @@ body {
   line-height: 1.15em;
   max-height: 2.3em;
 }
-.ca63332-related-product .text .amazon {
+.ca63332-amazon-product .text .amazon {
   color: #ffb036;
   font-size: 12px;
   font-weight: bold;
   margin-top: 12px;
   margin-left: 5px;
 }
-.ca63332-related-product .text .amazon img {
+.ca63332-amazon-product .text .amazon img {
   vertical-align: middle;
 }
-.ca63332-related-product .text .buy {
+.ca63332-amazon-product .text .buy {
   background: #f7941c;
   border-radius: 9999em;
   color: white;
@@ -87,74 +85,68 @@ body {
   min-width: 50px;
   padding: 12px 24px;
 }
-.ca63332-related-product .text .buy a {
+.ca63332-amazon-product .text .buy a {
   color: white;
   text-decoration: none;
 }
 @media only screen and (max-width: 1024px) and (min-width: 641px) {
-  body {
-    background: silver;
-  }
-  .ca63332-related-product {
+  .ca63332-amazon-product {
     height: 216px;
     width: 598px;
   }
-  .ca63332-related-product .image,
-  .ca63332-related-product .text {
+  .ca63332-amazon-product .image,
+  .ca63332-amazon-product .text {
     height: 216px;
   }
-  .ca63332-related-product .image {
+  .ca63332-amazon-product .image {
     width: 250px;
   }
-  .ca63332-related-product .image img {
+  .ca63332-amazon-product .image img {
     max-height: 216px;
     right: .5em;
   }
-  .ca63332-related-product .image .price {
+  .ca63332-amazon-product .image .price {
     height: 85px;
     left: 150px;
     line-height: 85px;
     min-width: 65px;
   }
-  .ca63332-related-product .text {
+  .ca63332-amazon-product .text {
     padding: 0 10 0 30px;
     width: calc(308px);
   }
-  .ca63332-related-product .text .buy {
+  .ca63332-amazon-product .text .buy {
     font-size: 14px;
   }
-  .ca63332-related-product .text .title {
+  .ca63332-amazon-product .text .title {
     margin-top: 42px;
   }
 }
 @media only screen and (max-width: 640px) and (min-width: 1px) {
-  body {
-    background: lightgray;
-  }
-  .ca63332-related-product {
+  .ca63332-amazon-product {
     height: 318px;
     width: 324px;
   }
-  .ca63332-related-product .image {
+  .ca63332-amazon-product .image {
     height: 156px;
     width: 324px;
   }
-  .ca63332-related-product .image img {
+  .ca63332-amazon-product .image img {
     max-height: 156px;
     max-width: 100%;
     right: 0;
   }
-  .ca63332-related-product .image .price {
+  .ca63332-amazon-product .image .price {
     left: 60px;
     top: 45px;
   }
-  .ca63332-related-product .text {
+  .ca63332-amazon-product .text {
     height: 160px;
     padding: 0 10px;
     text-align: center;
     width: 304px;
   }
-  .ca63332-related-product .text .title {
+  .ca63332-amazon-product .text .title {
     margin-top: 10px;
   }
 }
