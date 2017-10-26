@@ -1,7 +1,7 @@
 
 <div class="ca63332-amazon-product">
 	<div class="image">
-		<a href="{{url}}"><img src="{{thumbnail}}"></a>
+		{{thumbnail}}
 		<div class="price">{{price}}</div>
 	</div>
 	<div class="text">

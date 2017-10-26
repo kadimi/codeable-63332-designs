@@ -1,7 +1,7 @@
 
 <div class="ca63332-related-post">
 	<div class="image">
-			<img src="{{thumbnail}}">
+		{{thumbnail}}
 	</div>
 	<a href="{{permalink}}" class="overlay"></a>
 	<div class="text">

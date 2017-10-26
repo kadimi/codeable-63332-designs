@@ -30,9 +30,16 @@ gulp.task( 'tpl', function() {
     .pipe(rename(function (path) {
       path.extname = ".tpl"
     }))
-    .pipe(replace(/img\/berries\.jpg/g, '{{thumbnail}}'))
+
+    //  Amazon Product image.
+    .pipe(replace(/<a href="#(url|permalink)"><img src="img\/berries.jpg"><\/a>/g, '{{thumbnail}}'))
+    // Related Post image.
+    .pipe(replace(/<img src="img\/berries.jpg">/g, '{{thumbnail}}'))
+
+    //  Links.
     .pipe(replace(/#permalink/g, '{{permalink}}'))
     .pipe(replace(/#url/g, '{{url}}'))
+
     .pipe(replace(/A Nice.+Purpose/g, '{{title}}'))
     .pipe(replace(/\$20/g, '{{price}}'))
     .pipe(replace(/nam.*erat\./i, '{{excerpt}}'))
