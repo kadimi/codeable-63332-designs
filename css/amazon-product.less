@@ -2,19 +2,23 @@
 @color2: #ffb036;
 @color3: #f7941c;
 
-@breakpoint1-max: 1024px;
-@breakpoint1-min: 641px;
-@breakpoint2-max: 640px;
+@breakpoint1-max: 1018px;
+@breakpoint1-min: 767px;
+@breakpoint2-max: 768px;
 @breakpoint2-min: 1px;
 
-.max2lines {
+@desktop-width: 640px;
+@tablet-width: 484px;
+@mobile-width: 324px;
+
+.max-lines(@lines: 3; @line-height: 1.2) {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  line-height: 1.15em;
-  max-height: 2.3em;
+  -webkit-line-clamp: @lines;
+  line-height: @line-height;
+  max-height: @line-height * @lines;
 }
 
 .ca63332-amazon-product {
@@ -23,7 +27,7 @@
   margin-bottom: 1em;
   overflow: hidden;
   outline: solid 1px lightgray;
-  width: 786px;
+  width: @desktop-width;
   .image,
   .text {
     height: 184px;
@@ -58,14 +62,14 @@
   .text {
     background: white;
     padding: 0 10px 0 0;
-    width: calc(456px - 10px );
+    width: @desktop-width - 330px - 10px;
     .title {
       color: black;
       font-size: 24px;
       font-weight: bold;
       margin-top: 25px;
       margin-left: 5px;
-      .max2lines;
+      .max-lines(2, 1.15em);
       a {
         color: black;
         text-decoration: none;
@@ -101,7 +105,7 @@
 @media only screen and (max-width : @breakpoint1-max) and (min-width : @breakpoint1-min) {
   .ca63332-amazon-product {
     height: 216px;
-    width: 598px;
+    width: @tablet-width;
     .image,
     .text {
       height: 216px;
@@ -121,7 +125,7 @@
     }
     .text {
       padding: 0 10 0 30px;
-      width: calc( 348px - 10px - 30px );
+      width: @tablet-width - 250px - 10px - 30px;
       .buy {
         font-size: 14px;
       }
@@ -135,10 +139,10 @@
 @media only screen and (max-width : @breakpoint2-max) and (min-width : @breakpoint2-min) {
   .ca63332-amazon-product {
     height: 318px;
-    width: 324px;
+    width: @mobile-width;
     .image{
       height: 156px;
-      width: 324px;
+      width: @mobile-width;
       img{
         max-height: 156px;
         max-width: 100%;
@@ -153,7 +157,7 @@
       height: 160px;
       padding: 0 10px;
       text-align: center;
-      width: 304px;
+      width: @mobile-width - 20px;
       .title{
         margin-top: 10px;
       }

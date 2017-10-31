@@ -2,10 +2,14 @@
 @color2: #444;
 @color3: #4e4e4e;
 
-@breakpoint1-max: 1024px;
-@breakpoint1-min: 641px;
-@breakpoint2-max: 640px;
+@breakpoint1-max: 1018px;
+@breakpoint1-min: 767px;
+@breakpoint2-max: 768px;
 @breakpoint2-min: 1px;
+
+@desktop-width: 640px;
+@tablet-width: 484px;
+@mobile-width: 324px;
 
 @overlay-opacity: .5;
 @overlay-color-1: #6d84f3;
@@ -37,7 +41,7 @@
   height: 216px;
   margin-bottom: 1em;
   overflow: hidden;
-  width: 766px;
+  width: @desktop-width;
   .text {
     float: left;
     height: 216px;
@@ -73,7 +77,7 @@
   .text {
     background: white;
     padding: 0 10px 0 30px;
-    width: calc(566px - 10px - 40px );
+    width: @desktop-width - 200px - 10px - 40px;
     .title {
       font-family: Roboto, sans-serif;
       font-size: 24px;
@@ -112,7 +116,7 @@
 @media only screen and (max-width : @breakpoint1-max) and (min-width : @breakpoint1-min) {
   .ca63332-related-post {
     height: 216px;
-    width: 598px;
+    width: @tablet-width;
     .text {
       height: 216px;
     }
@@ -124,7 +128,7 @@
     }
     .text {
       padding: 0 20px 0 20px;
-      width: calc( 598px - 180px - 20px - 20px );
+      width: calc( @tablet-width - 180px - 20px - 20px );
       .read {
         font-size: 14px;
       }
@@ -138,18 +142,18 @@
 @media only screen and (max-width : @breakpoint2-max) and (min-width : @breakpoint2-min) {
   .ca63332-related-post {
     height: 519px;
-    width: 324px;
+    width: @mobile-width;
     .image,
     .image img,
     .overlay{
       height: 250px;
-      width: 324px;
+      width: @mobile-width;
     }
     .text {
       height: 269px;
       padding: 0 10px 0 10px;
       text-align: center;
-      width: calc(324px - 10px - 10px);
+      width: calc(@mobile-width - 10px - 10px);
       .title{
         margin-top: 20px;
         .max-lines( 3, 1.4em );
