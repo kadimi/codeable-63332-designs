@@ -18,6 +18,7 @@
   width: 330px;
 }
 .ca63332-amazon-product .image img {
+  display: inline;
   max-height: 184px;
   position: relative;
   right: 1.5em;
@@ -68,6 +69,8 @@
   margin-left: 5px;
 }
 .ca63332-amazon-product .text .amazon img {
+  display: inline;
+  margin: 0;
   vertical-align: middle;
 }
 .ca63332-amazon-product .text .buy a {
