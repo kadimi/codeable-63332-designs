@@ -21,7 +21,7 @@
   max-height: 184px;
 }
 .ca63332-amazon-product .image .price {
-  background: #f55411;
+  background: #f7941c;
   border-radius: 9999em;
   color: white;
   display: inline;
@@ -104,6 +104,9 @@
   }
   .ca63332-amazon-product .image {
     width: 250px;
+  }
+  .ca63332-amazon-product .image .price {
+    background: #73AC77;
   }
   .ca63332-amazon-product .image img {
     max-height: 216px;

@@ -2,18 +2,23 @@
 @color2: #444;
 @color3: #4e4e4e;
 
-@breakpoint1-max: 1018px;
-@breakpoint1-min: 767px;
-@breakpoint2-max: 768px;
-@breakpoint2-min: 1px;
-
-@desktop-width: 640px;
-@tablet-width: 484px;
-@mobile-width: 324px;
-
 @overlay-opacity: .5;
 @overlay-color-1: #6d84f3;
 @overlay-color-2: #eb677f;
+
+@widescreen-width: 696px;
+
+@desktop-max: 1140px;
+@desktop-min: 1019px;
+@desktop-width: 640px;
+
+@tablet-max: 1018px;
+@tablet-min: 767px;
+@tablet-width: 484px;
+
+@mobile-max: 768px;
+@mobile-min: 1px;
+@mobile-width: 324px;
 
 .gradient(@type; @colors; @dir: 90deg; @prefixes: webkit, moz, ms, o; @index: length(@prefixes)) when (@index > 0) {
   .gradient(@type; @colors; @dir; @prefixes; (@index - 1));
@@ -41,7 +46,7 @@
   height: 216px;
   margin-bottom: 1em;
   overflow: hidden;
-  width: @desktop-width;
+  width: @widescreen-width;
   .text {
     float: left;
     height: 216px;
@@ -77,7 +82,7 @@
   .text {
     background: white;
     padding: 0 10px 0 30px;
-    width: @desktop-width - 200px - 10px - 40px;
+    width: @widescreen-width - 200px - 10px - 40px;
     .title {
       font-family: Roboto, sans-serif;
       font-size: 24px;
@@ -113,7 +118,16 @@
   }
 }
 
-@media only screen and (max-width : @breakpoint1-max) and (min-width : @breakpoint1-min) {
+@media only screen and (max-width : @desktop-max) and (min-width : @desktop-min) {
+  .ca63332-related-post {
+    width: @desktop-width;
+    .text {
+      width: calc( @desktop-width - 200px - 20px - 20px );
+    }
+  }
+}
+
+@media only screen and (max-width : @tablet-max) and (min-width : @tablet-min) {
   .ca63332-related-post {
     height: 216px;
     width: @tablet-width;
@@ -139,7 +153,7 @@
   }
 }
 
-@media only screen and (max-width : @breakpoint2-max) and (min-width : @breakpoint2-min) {
+@media only screen and (max-width : @mobile-max) and (min-width : @mobile-min) {
   .ca63332-related-post {
     height: 519px;
     width: @mobile-width;
