@@ -41,7 +41,7 @@ gulp.task( 'tpl', function() {
     .pipe(replace(/#url/g, '{{url}}'))
 
     .pipe(replace(/A Nice.+Purpose/g, '{{title}}'))
-    .pipe(replace(/\$20/g, '{{price}}'))
+    .pipe(replace(/\$249\.99/g, '{{price}}'))
     .pipe(replace(/nam.*erat\./i, '{{excerpt}}'))
     .pipe(replace(/<htm[\s\S]+<body>/, ''))
     .pipe(replace(/<script[\s\S]+/, ''))
