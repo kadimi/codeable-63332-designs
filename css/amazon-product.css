@@ -4,7 +4,7 @@
   margin-bottom: 1em;
   overflow: hidden;
   outline: solid 1px lightgray;
-  width: 640px;
+  width: 728px;
 }
 .ca63332-amazon-product .image,
 .ca63332-amazon-product .text {
@@ -41,7 +41,7 @@
 .ca63332-amazon-product .text {
   background: white;
   padding: 0 10px 0 0;
-  width: 300px;
+  width: 388px;
 }
 .ca63332-amazon-product .text .title {
   color: black;
@@ -84,6 +84,21 @@
   margin-top: 12px;
   padding: 20px 24px;
   text-decoration: none;
+}
+@media only screen and (max-width: 1140px) and (min-width: 1019px) {
+  .ca63332-amazon-product {
+    width: 640px;
+  }
+  .ca63332-amazon-product .image {
+    width: 250px;
+  }
+  .ca63332-amazon-product .image img {
+    right: .5em;
+  }
+  .ca63332-amazon-product .text {
+    padding: 0 10 0 30px;
+    width: 350px;
+  }
 }
 @media only screen and (max-width: 1018px) and (min-width: 767px) {
   .ca63332-amazon-product {

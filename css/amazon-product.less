@@ -2,11 +2,14 @@
 @color2: #ffb036;
 @color3: #f7941c;
 
+@breakpoint0-max: 1140px;
+@breakpoint0-min: 1019px;
 @breakpoint1-max: 1018px;
 @breakpoint1-min: 767px;
 @breakpoint2-max: 768px;
 @breakpoint2-min: 1px;
 
+@widescreen-width: 728px;
 @desktop-width: 640px;
 @tablet-width: 484px;
 @mobile-width: 324px;
@@ -27,7 +30,7 @@
   margin-bottom: 1em;
   overflow: hidden;
   outline: solid 1px lightgray;
-  width: @desktop-width;
+  width: @widescreen-width;
   .image,
   .text {
     height: 184px;
@@ -63,7 +66,7 @@
   .text {
     background: white;
     padding: 0 10px 0 0;
-    width: @desktop-width - 330px - 10px;
+    width: @widescreen-width - 330px - 10px;
     .title {
       color: black;
       font-size: 24px;
@@ -101,6 +104,22 @@
         padding: 20px 24px;
         text-decoration: none;
       }
+    }
+  }
+}
+
+@media only screen and (max-width : @breakpoint0-max) and (min-width : @breakpoint0-min) {
+  .ca63332-amazon-product {
+    width: @desktop-width;
+    .image {
+      width: 250px;
+      img{
+        right: .5em;
+      }
+    }
+    .text {
+      padding: 0 10 0 30px;
+      width: @desktop-width - 250px - 10px - 30px;
     }
   }
 }
