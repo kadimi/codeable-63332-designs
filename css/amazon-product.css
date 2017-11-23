@@ -2,7 +2,6 @@
   font-family: Roboto, sans-serif;
   height: 184px;
   margin-bottom: 1em;
-  overflow: hidden;
   outline: solid 1px lightgray;
   width: 696px;
 }
@@ -20,8 +19,6 @@
 .ca63332-amazon-product .image img {
   display: inline;
   max-height: 184px;
-  position: relative;
-  right: 1.5em;
 }
 .ca63332-amazon-product .image .price {
   background: #f55411;
@@ -30,11 +27,11 @@
   display: inline;
   font-size: 22px;
   height: 85px;
-  left: 160px;
+  left: -25px;
   line-height: 85px;
   padding: 0;
   position: absolute;
-  top: 16px;
+  top: -25px;
   width: 85px;
 }
 .ca63332-amazon-product .text {
@@ -91,9 +88,6 @@
   .ca63332-amazon-product .image {
     width: 250px;
   }
-  .ca63332-amazon-product .image img {
-    right: .5em;
-  }
   .ca63332-amazon-product .text {
     padding: 0 10 0 30px;
     width: 350px;
@@ -113,10 +107,6 @@
   }
   .ca63332-amazon-product .image img {
     max-height: 216px;
-    right: .5em;
-  }
-  .ca63332-amazon-product .image .price {
-    left: 150px;
   }
   .ca63332-amazon-product .text {
     padding: 0 10 0 30px;
@@ -141,11 +131,6 @@
   .ca63332-amazon-product .image img {
     max-height: 156px;
     max-width: 100%;
-    right: 0;
-  }
-  .ca63332-amazon-product .image .price {
-    left: 60px;
-    top: 45px;
   }
   .ca63332-amazon-product .text {
     height: 160px;

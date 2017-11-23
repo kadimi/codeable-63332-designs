@@ -2,16 +2,18 @@
 @color2: #ffb036;
 @color3: #f7941c;
 
-@breakpoint0-max: 1140px;
-@breakpoint0-min: 1019px;
-@breakpoint1-max: 1018px;
-@breakpoint1-min: 767px;
-@breakpoint2-max: 768px;
-@breakpoint2-min: 1px;
-
 @widescreen-width: 696px;
+
+@desktop-max: 1140px;
+@desktop-min: 1019px;
 @desktop-width: 640px;
+
+@tablet-max: 1018px;
+@tablet-min: 767px;
 @tablet-width: 484px;
+
+@mobile-max: 768px;
+@mobile-min: 1px;
 @mobile-width: 324px;
 
 .max-lines(@lines: 3; @line-height: 1.2) {
@@ -28,7 +30,6 @@
   font-family: Roboto, sans-serif;
   height: 184px;
   margin-bottom: 1em;
-  overflow: hidden;
   outline: solid 1px lightgray;
   width: @widescreen-width;
   .image,
@@ -44,8 +45,6 @@
     img{
       display: inline;
       max-height: 184px;
-      position: relative;
-      right: 1.5em;
     }
     .price {
       background: @color1;
@@ -54,11 +53,11 @@
       display: inline;
       font-size: 22px;
       height: 85px;
-      left: 160px;
+      left: -25px;
       line-height: 85px;
       padding: 0;
       position: absolute;
-      top: 16px;
+      top: -25px;
       width: 85px;
     }
   }
@@ -107,14 +106,11 @@
   }
 }
 
-@media only screen and (max-width : @breakpoint0-max) and (min-width : @breakpoint0-min) {
+@media only screen and (max-width : @desktop-max) and (min-width : @desktop-min) {
   .ca63332-amazon-product {
     width: @desktop-width;
     .image {
       width: 250px;
-      img{
-        right: .5em;
-      }
     }
     .text {
       padding: 0 10 0 30px;
@@ -123,7 +119,7 @@
   }
 }
 
-@media only screen and (max-width : @breakpoint1-max) and (min-width : @breakpoint1-min) {
+@media only screen and (max-width : @tablet-max) and (min-width : @tablet-min) {
   .ca63332-amazon-product {
     height: 216px;
     width: @tablet-width;
@@ -135,10 +131,6 @@
       width: 250px;
       img{
         max-height: 216px;
-        right: .5em;
-      }
-      .price {
-        left: 150px;
       }
     }
     .text {
@@ -154,7 +146,7 @@
   }
 }
 
-@media only screen and (max-width : @breakpoint2-max) and (min-width : @breakpoint2-min) {
+@media only screen and (max-width : @mobile-max) and (min-width : @mobile-min) {
   .ca63332-amazon-product {
     height: 318px;
     width: @mobile-width;
@@ -164,11 +156,6 @@
       img{
         max-height: 156px;
         max-width: 100%;
-        right: 0;
-      }
-      .price {
-        left: 60px;
-        top: 45px;
       }
     }
     .text {
